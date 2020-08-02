@@ -1,0 +1,23 @@
+server:
+  port: 8090
+spring:
+  application:
+    name: shop-service-product
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url:  jdbc:mysql://192.168.198.129:3306/shop?useUnicode=true&characterEncoding=utf8
+    username: root
+    password: 20200316
+  jpa:
+    database: mysql
+    show-sql: true
+    open-in-view: true
+eureka:
+  client:
+    fetch-registry: true #是否从eureka获取注册信息
+    register-with-eureka: true #是否注册到eureka
+    service-url:  # eureka server的路径
+      defaultZone: http://192.168.1.13:8091/eureka/
+  instance:
+    prefer-ip-address: true #将自己ip注册到eureka
+    instance-id: 192.168.1.13:${server.port}

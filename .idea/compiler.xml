@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="eurekaserver" />
+        <module name="shop_gateway_server" />
+        <module name="shop_parent" />
+        <module name="shop_service_common" />
+        <module name="shop_service_order" />
+        <module name="shop_service_product" />
+        <module name="shop_service_user" />
+        <module name="shop_zuul_server" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="eurekaserver" target="1.8" />
+      <module name="shop_eureka_server" target="1.8" />
+      <module name="shop_gateway_server" target="1.8" />
+      <module name="shop_parent" target="1.8" />
+      <module name="shop_service_common" target="1.8" />
+      <module name="shop_service_order" target="1.8" />
+      <module name="shop_service_product" target="1.8" />
+      <module name="shop_service_user" target="1.8" />
+      <module name="shop_zuul_server" target="1.8" />
+      <module name="shoppingcentos" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="eurekaserver" options="-parameters" />
+      <module name="shop_eureka_server" options="-parameters" />
+      <module name="shop_gateway_server" options="-parameters" />
+      <module name="shop_parent" options="-parameters" />
+      <module name="shop_service_common" options="-parameters" />
+      <module name="shop_service_order" options="-parameters" />
+      <module name="shop_service_product" options="-parameters" />
+      <module name="shop_service_user" options="-parameters" />
+      <module name="shop_zuul_server" options="-parameters" />
+      <module name="shoppingcentos" options="-parameters" />
+    </option>
+  </component>
+</project>

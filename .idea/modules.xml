@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/eurekaserver/eurekaserver.iml" filepath="$PROJECT_DIR$/eurekaserver/eurekaserver.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shop_gateway_server/shop_gateway_server.iml" filepath="$PROJECT_DIR$/shop_gateway_server/shop_gateway_server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shop_parent/shop_parent.iml" filepath="$PROJECT_DIR$/shop_parent/shop_parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shop_service_common/shop_service_common.iml" filepath="$PROJECT_DIR$/shop_service_common/shop_service_common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shop_service_order/shop_service_order.iml" filepath="$PROJECT_DIR$/shop_service_order/shop_service_order.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shop_service_product/shop_service_product.iml" filepath="$PROJECT_DIR$/shop_service_product/shop_service_product.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shop_service_user/shop_service_user.iml" filepath="$PROJECT_DIR$/shop_service_user/shop_service_user.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shop_zuul_server/shop_zuul_server.iml" filepath="$PROJECT_DIR$/shop_zuul_server/shop_zuul_server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/springclode.iml" filepath="$PROJECT_DIR$/.idea/springclode.iml" />
+    </modules>
+  </component>
+</project>

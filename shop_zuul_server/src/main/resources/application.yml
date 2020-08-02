@@ -1,0 +1,23 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: zuul-api
+zuul:
+  routes:
+    shop-service-product: /product/**
+    shop-service-user: /user/**
+    shop-service-order: /order/**
+    #product-service: # 这里是路由id，随意写
+     # path: /product-service/**   # 这里是映射路径
+     # url: http://127.0.0.1:8090   # 映射路径对应的实际url地址
+      #sensitiveHeaders: #默认zuul会屏蔽cookie，cookie不会传到下游服务，这里设置为空则取 消默认的黑名单，如果设置了具体的头信息则不会传到下游服务
+eureka:
+  client:
+    service-url:
+      defaultZone: http://192.168.1.13:8091/eureka/
+      registry-fetch-interval-seconds: 5 # 获取服务列表的周期：5s
+  instance:
+    prefer-ip-address: true #将自己ip注册到eureka
+    instance-id: 192.168.1.13:${server.port}

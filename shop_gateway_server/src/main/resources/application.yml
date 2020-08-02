@@ -1,0 +1,22 @@
+server:
+  port: 9800
+spring:
+  application:
+    name: api-gateway
+  cloud:
+    gateway:
+      routes:
+        - id: product-service
+          uri: lb://shop-service-product
+          predicates:
+          - Path=/product-service/**
+          filters:
+          - RewritePath=/product-service/(?<segment>.*), /$\{segment}
+eureka:
+  client:
+    service-url:
+      defaultZone: http://192.168.1.13:8091/eureka/
+      registry-fetch-interval-seconds: 5 # 获取服务列表的周期：5s
+  instance:
+    prefer-ip-address: true #将自己ip注册到eureka
+    instance-id: 192.168.1.13:${server.port}
