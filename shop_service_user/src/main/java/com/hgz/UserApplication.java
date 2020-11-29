@@ -9,7 +9,7 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 
 
 @SpringBootApplication(scanBasePackages="com.hgz")
-@EntityScan("com.hgz.pojo")//扫描实体类
+@EntityScan("com.hgz")//扫描实体类
 @EnableDiscoveryClient
 public class UserApplication {
     public static void main(String[] args) {

@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+
 @Service
 public class ProductServiceImpl implements ProductService {
 
@@ -41,7 +42,7 @@ public class ProductServiceImpl implements ProductService {
     }
 
     @Override
-    public List<TbProduct> selectByExample(TbProductExample example) {
+    public List<TbProduct> select(TbProductExample example) {
         return productMapper.selectByExample(example);
     }
 
@@ -52,12 +53,12 @@ public class ProductServiceImpl implements ProductService {
 
     @Override
     public int updateByExampleSelective(TbProduct record, TbProductExample example) {
-        return productMapper.updateByExampleSelective(record,example);
+        return productMapper.updateByExampleSelective(record, example);
     }
 
     @Override
     public int updateByExample(TbProduct record, TbProductExample example) {
-        return productMapper.updateByExample(record,example);
+        return productMapper.updateByExample(record, example);
     }
 
     @Override

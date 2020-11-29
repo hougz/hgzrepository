@@ -19,10 +19,10 @@ public class ProductController {
     private ProductService productService;
 
 
-    @RequestMapping(value = "/all",method = RequestMethod.GET)
-    public List<TbProduct> findAll(){
-        TbProductExample example=new TbProductExample();
-       return productService.selectByExample(example);
+    @RequestMapping(value = "/all", method = RequestMethod.GET)
+    public List<TbProduct> findAll() {
+        TbProductExample example = new TbProductExample();
+        return productService.select(example);
     }
 
 }

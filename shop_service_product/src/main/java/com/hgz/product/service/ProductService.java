@@ -19,7 +19,7 @@ public interface ProductService {
 
     int insertSelective(TbProduct record);
 
-    List<TbProduct> selectByExample(TbProductExample example);
+    List<TbProduct> select(TbProductExample example);
 
     TbProduct selectByPrimaryKey(Integer id);
 

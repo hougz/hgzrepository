@@ -1,5 +1,5 @@
 server:
-  port: 8091 #服务端口
+  port: 8099 #服务端口
 eureka:
   client:
     fetch-registry: false #是否从eureka获取注册信息
